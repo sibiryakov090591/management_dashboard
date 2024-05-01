@@ -27,7 +27,7 @@ const StatisticsItem = styled("div")(({ theme }) => ({
   height: "80px",
 }));
 
-const StatisticsItemTitle = styled("div")(({ theme }) => ({
+const StatisticsItemTitle = styled("div")(() => ({
   fontSize: "14px !important",
   fontWeight: "700 !important",
   lineHeight: "1.6",
@@ -40,18 +40,11 @@ const StatisticsItemCount = styled("div")(({ theme }) => ({
   lineHeight: "1.6",
 }));
 
-const StatisticsItemSubTitle = styled("div")(({ theme }) => ({
+const StatisticsItemSubTitle = styled("div")(() => ({
   fontSize: "10px !important",
   fontWeight: "600 !important",
   lineHeight: "1.6",
 }));
-
-const data = [
-  { value: 5, label: "A" },
-  { value: 10, label: "B" },
-  { value: 15, label: "C" },
-  { value: 20, label: "D" },
-];
 
 const Main = () => {
   return (

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import * as React from "react";
-import { styled, useTheme, Theme, CSSObject } from "@mui/material/styles";
+import { styled, Theme, CSSObject } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import IconButton from "@mui/material/IconButton";
@@ -98,7 +97,6 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 const Menu = () => {
-  const theme = useTheme();
   const [open, setOpen] = useState(false);
 
   const handleDrawerToggle = (value: boolean) => () => {

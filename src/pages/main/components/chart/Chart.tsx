@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 import { useEffect } from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import { Box, Button, Hidden } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 const dateValues: Array<{ label: FilterValues; xLabels: string[] }> = [
   {
@@ -266,7 +266,7 @@ const Chart = () => {
       <div>
         <LineChart
           xAxis={[{ scaleType: "point", data: labels }]}
-          series={series}
+          series={series as any}
           height={300}
           grid={{ vertical: false, horizontal: true }}
         />
