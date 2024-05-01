@@ -1,0 +1,33 @@
+.swiper {
+    position: relative;
+}
+
+.swiper:before {
+    content: "";
+    pointer-events: none;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    width: 65px;
+    background: linear-gradient(to left, rgba(238, 241, 247, 1), rgba(255, 255, 255, 0));
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    width: auto !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
